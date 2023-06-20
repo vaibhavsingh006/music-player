@@ -126,19 +126,8 @@ for (let i = 0; i < imgplaysec.length; i++) {
         masterpause.classList.add('hide');
         masterpause.classList.remove('show');
 
-
-        // for (let p = 0; p < imgplaysec.length; p++) {
-        //     if (i != p) {
-        //         // imgplaysec[p].classList.add('blox');
-        //     }
-        // }
     })
 }
-
-
-
-
-
 
 
 // --------------------- handel play a song on click ------------------------------
@@ -314,5 +303,5 @@ let togglephone = document.getElementsByClassName('main-station');
 
 masterimg[0].addEventListener('click', () => {
     togglephone[0].classList.toggle('main-station-toggle')
-    console.log('ho gyi toggle')
+    // console.log('ho gyi toggle')
 })
