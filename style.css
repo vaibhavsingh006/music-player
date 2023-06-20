@@ -583,7 +583,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         justify-content: end;
         align-items: center;
         width: 100%;
-        height: 62%;
+        height: 80%;
         z-index: 99;
     }
 
@@ -598,7 +598,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
 
     .main-station-toggle .buttons {
         width: 100%;
-        height: 70%;
+        height: 88%;
         align-items: end;
         z-index: 80;
     }
@@ -611,7 +611,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         width: 102%;
         justify-content: center;
         position: absolute;
-        height: 76%;
+        height: 92%;
         display: flex !important;
         align-items: end;
     }
@@ -663,15 +663,15 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
 
 
     .main-station-toggle .songs-title {
-        height: 33% !important;
+        height: 51% !important;
     }
 
     .main-station-toggle .buttons {
-        height: 44% !important;
+        height: 60% !important;
     }
 
     .main-station-toggle .progressbar {
-        height: 49% !important;
+        height: 65% !important;
     }
 
     section .container .right-side-Music {
