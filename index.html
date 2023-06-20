@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="Icon" type="image/png" href="./1686916516053.png">
+</head>
+<style>
+
+</style>
+
+<body>
+    <section>
+        <div class="container">
+
+            <div class="main-station">
+
+                <div class="songs-title">
+                    <img class="masterimg" src="./images (6).jpeg" alt="song">
+                    <div class="songs-title-details">
+                        <h4 class="master-title">Tum Mere</h4>
+                        <p class="master-title-child">Vaibhav Singh</p>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <img src="./next.png" style="transform: rotate(180deg);" class="next" title="Previous" id="Previous"
+                        alt="">
+                    <img src="./1686916516042.png" id="masterplay" class="show songplaybutton" title="Play" alt="">
+                    <img src="./1686916516033.png" id="pause" class="hide songplaybutton" title="Pause" alt="">
+                    <img src="./next.png" class="next" title="Next" id="next" alt="">
+                </div>
+                <div class="progressbar">
+                    <video src="./gif.mp4" style="width: 40px;" id="gif" autoplay="enable" muted loop></video>
+                    <input type="range" style="width: 40%;" value="0" id="myprogressBar">
+                </div>
+            </div>
+
+            <div class="left-fixed-side" style="height: 86%;">
+                <div class="left-home-box">
+                    <ul>
+                        <li> <img src="./home.png" alt="logo"> <a href="#">Home</a></li>
+                        <li id="search"> <img src="./search.png" alt="logo"> <a href="#">search</a></li>
+                    </ul>
+                </div>
+
+                <div class="left-library">
+                    <div class="left-library-top">
+                        <div class="left-library-top-left">
+                            <img src="./library.png" alt="">
+                            <h3>Your Library</h3>
+                        </div>
+                        <div class="left-library-top-right">
+                            <img src="./plus.png" alt="png">
+                            <img src="./right.png" alt="png">
+                        </div>
+                    </div>
+
+                    <div class="left-library-playlist">
+                        <div class="playlist-first">
+                            <h4>create your first playlist</h4>
+                            <p>it's easy, we'll help you</p>
+                            <a href="#" id="log-in">create playlist</a>
+                        </div>
+                        <div class="playlist-first">
+                            <h4>create your Podcast playlist</h4>
+                            <p>it's easy, we'll help you</p>
+                            <a href="#" id="log-in">Browse Podcast</a>
+                        </div>
+                    </div>
+
+                    <div class="links">
+                        <a href="#">Legal</a>
+                        <a href="#">Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+
+                    <div class="language-button">
+                        <a href="#"
+                            style="font-weight: 700; color: #fff; border: 2px solid white; padding: 5px 8px; text-decoration: none; border-radius: 18px;">English</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mid-line"></div>
+
+            <div class="right-side-Music" style="height: 88%;">
+                <div class="header">
+                    <div class="header-left">
+                        <a href="#"> <img style="transform: rotate(180deg); width: 33px;" src="./right.png" alt=""> </a>
+                        <a href="#"> <img style="width: 33px;" src="./right.png" alt=""> </a>
+                        <img src="./1687329026779.png" alt="png">
+                    </div>
+                    <div class="header-right">
+                        <a href="#" id="sign-in">Sign up</a>
+                        <a href="#" id="log-in">Log in</a>
+                    </div>
+                </div>
+
+                <div class="music-title">
+                    <li><a href="#" style="font-size: 20px;">Focus</a></li>
+                    <li><a href="#">show all</a></li>
+                </div>
+                <div class="music-content">
+
+
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./deep-focus.jpg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="0">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Deep</h3>
+                            <p class="songBy">Deep Focus to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./focus-flow.jpg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="1">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Focus Flow</h3>
+                            <p class="songBy">Focus Flow to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./peacful.jpg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="2">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Peaceful piano</h3>
+                            <p class="songBy">peaceful flow to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./instrumental.jpg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="3">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Instrumental Study</h3>
+                            <p class="songBy">Instrumental to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./instrumental.jpg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="4">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Instrumental Study</h3>
+                            <p class="songBy">Instrumental to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./peacful.jpg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="5">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">piano</h3>
+                            <p class="songBy">peaceful flow to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="6">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Focus Flow</h3>
+                            <p class="songBy">Focus Flow to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="7">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Deep Focus</h3>
+                            <p class="songBy">Deep Focus to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./images (6).jpeg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="8">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Tum</h3>
+                            <p class="songBy">Tum Mere to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song">
+                            <img src="./images (6).jpeg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="9">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Tum mere</h3>
+                            <p class="songBy">Tum Mere to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song ">
+                            <img src="" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="10">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Deep Foucs</h3>
+                            <p class="songBy">Deep Foucs to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                    <div class="first-song ">
+                        <div class="image-song ">
+                            <img src="./deep-focus.jpg" alt="song">
+                            <img src="./1687260363082.png" alt="png" class="imgplay imgplay-one songItemPlay" id="11">
+                            <img src="./1687260363070.png" alt="png" class="imgplay-sec imgplay">
+                        </div>
+                        <div class="song-content">
+                            <h3 class="songName">Deep</h3>
+                            <p class="songBy">Deep Foucs to help you to <br> slowdown</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="new.js"></script>
+
+    <script>
+        // let togglephone = document.getElementsByClassName('.main-station')
+    </script>
+</body>
+
+</html>
