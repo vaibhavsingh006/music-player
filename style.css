@@ -578,7 +578,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         width: 97%;
         z-index: 99;
         background: black;
-        padding-top: 10px;
+        padding: 10px 0;
     }
 
     .main-station-toggle {
