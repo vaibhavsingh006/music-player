@@ -518,7 +518,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:820px) {
     .imgplay {
         /* display: block !important; */
         bottom: 4px;
@@ -567,8 +567,18 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         width: 38% !important;
     }
 
+    .right-side-Music {
+        height: 100% !important;
+    }
+
     .main-station {
         transition: all 0.7s;
+        position: fixed;
+        bottom: 8px;
+        width: 97%;
+        z-index: 99;
+        background: black;
+        padding-top: 10px;
     }
 
     .main-station-toggle {
@@ -622,6 +632,12 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
 
     .main-station-toggle .progressbar>input {
         width: 90% !important;
+    }
+
+
+    .header {
+        position: fixed !important;
+        width: 79% !important;
     }
 }
 
