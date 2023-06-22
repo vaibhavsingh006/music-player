@@ -571,6 +571,10 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         height: 100% !important;
     }
 
+    .songs-duration {
+        width: 90% !important;
+    }
+
     .main-station {
         transition: all 0.7s;
         position: fixed;
@@ -578,7 +582,8 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         width: 97%;
         z-index: 99;
         background: black;
-        padding: 10px 0;
+        padding: 20px 0;
+        bottom: 0;
     }
 
     .main-station-toggle {
@@ -593,7 +598,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         justify-content: end;
         align-items: center;
         width: 100%;
-        height: 80%;
+        height: 45%;
         z-index: 99;
     }
 
@@ -608,7 +613,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
 
     .main-station-toggle .buttons {
         width: 100%;
-        height: 88%;
+        height: 55%;
         align-items: end;
         z-index: 80;
     }
@@ -621,7 +626,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         width: 102%;
         justify-content: center;
         position: absolute;
-        height: 92%;
+        height: 58%;
         display: flex !important;
         align-items: end;
     }
@@ -638,6 +643,8 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
     .header {
         position: fixed !important;
         width: 79% !important;
+        top: 0;
+        height: 60px !important;
     }
 }
 

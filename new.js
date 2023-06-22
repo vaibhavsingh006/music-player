@@ -285,17 +285,47 @@ audioElement.addEventListener('timeupdate', () => {
         masterpause.classList.add('hide');
         masterpause.classList.remove('show');
     }
+
+    // times()
+
+    if (audioElement.currentTime < 10) {
+        // console.log('done')
+
+        // apple = "0" + Math.floor(audioElement.currentTime);
+        // console.log(apple)
+
+        // currentDuration.innerHTML = "00:" + apple;
+
+        currentDuration.innerHTML = "0" + times("0" + audioElement.currentTime);
+        // console.log(currentDuration.innerHTML);
+
+    } else {
+        currentDuration.innerHTML = "0" + times(audioElement.currentTime);
+    }
+
+    songDuration[0].innerHTML = "0" + times(audioElement.duration);
+    // console.log(times(audioElement.duration));
+
+    // mango = "0" + times(audioElement.duration);
+    // songDuration[0].innerHTML = mango - currentDuration.innerHTML;
+
+
 })
+
+function times(time) {
+
+    return isNaN(audioElement.duration) ? "00:00" : Math.floor(time / 60) + ":" + parseInt((((time / 60) % 1) * 59).toPrecision(2));
+
+}
+
+let currentDuration = document.getElementsByClassName('current-duration')[0];
+let songDuration = document.getElementsByClassName('song-duration');
 
 
 myprogressBar.addEventListener('change', () => {
     audioElement.currentTime = myprogressBar.value * audioElement.duration / 100;
     // console.log(audioElement.currentTime);
 })
-
-
-
-
 
 
 

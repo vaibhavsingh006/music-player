@@ -12,7 +12,16 @@
     <link rel="Icon" type="image/png" href="./1686916516053.png">
 </head>
 <style>
-
+    .songs-duration {
+        z-index: 99;
+        color: #383838;
+        position: absolute;
+        bottom: 18px;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        font-family: monospace;
+    }
 </style>
 
 <body>
@@ -36,7 +45,12 @@
                     <img src="./1686916516033.png" id="pause" class="hide songplaybutton" title="Pause" alt="">
                     <img src="./next.png" class="next" title="Next" id="next" alt="">
                 </div>
+
                 <div class="progressbar">
+                    <div class="songs-duration">
+                        <span class="current-duration">00:00</span>
+                        <span class="song-duration">00:00</span>
+                    </div>
                     <video src="./gif.mp4" style="width: 40px;" id="gif" autoplay="enable" muted loop></video>
                     <input type="range" style="width: 40%;" value="0" id="myprogressBar">
                 </div>
