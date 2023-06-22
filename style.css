@@ -565,6 +565,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
 @media screen and (max-width:500px) {
     .first-song {
         width: 38% !important;
+        box-shadow: inset 0px 0px 100px #2c2c2c;
     }
 
     .right-side-Music {
@@ -598,7 +599,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         justify-content: end;
         align-items: center;
         width: 100%;
-        height: 45%;
+        height: 53%;
         z-index: 99;
     }
 
@@ -613,7 +614,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
 
     .main-station-toggle .buttons {
         width: 100%;
-        height: 55%;
+        height: 63%;
         align-items: end;
         z-index: 80;
     }
@@ -626,7 +627,7 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         width: 102%;
         justify-content: center;
         position: absolute;
-        height: 58%;
+        height: 66%;
         display: flex !important;
         align-items: end;
     }
@@ -645,6 +646,10 @@ section .container .right-side-Music .music-content .first-song .song-content>p 
         width: 79% !important;
         top: 0;
         height: 60px !important;
+    }
+
+    section .container .right-side-Music .music-content {
+        padding-bottom: 125px;
     }
 }
 
