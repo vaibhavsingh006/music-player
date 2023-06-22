@@ -39,7 +39,7 @@ let songs = [
 
 // ----------------------- master element handel ---------------------
 
-//  ------------ pause button handel ------------------------
+//  ------------ play button handel ------------------------
 
 masterplay.addEventListener('click', () => {
     // console.log('done')
@@ -53,10 +53,23 @@ masterplay.addEventListener('click', () => {
 
         masterpause.classList.add('show');
         masterpause.classList.remove('hide');
+
+
+        imgplaysec[songIndex].classList.add('blox');
+
+        for (let i = 0; i < imgplaysec.length; i++) {
+            // console.log('remove ho rhi hai')
+            if (i != songIndex) {
+                imgplayone[songIndex].classList.remove('blox')
+                // console.log('remove ho rhi hai')
+                imgplaysec[i].classList.remove('blox')
+
+            }
+        }
     }
 })
 
-//  ------------ play button handel ------------------------
+//  ------------ pause button handel ------------------------
 
 masterpause.addEventListener('click', () => {
     // console.log('done')
@@ -69,10 +82,11 @@ masterpause.addEventListener('click', () => {
 
         masterpause.classList.add('hide');
         masterpause.classList.remove('show');
+
+
+
     }
 })
-
-
 // ----------------  image or songName is here jo ki ui me dikh rhe hai  ---------------------
 
 songitem.forEach((element, i) => {
@@ -84,9 +98,11 @@ songitem.forEach((element, i) => {
 });
 
 // ------------ master section me image and title changes -----------------------
+let play = document.getElementsByClassName('imgplay-one');
 
-for (let i = 0; i < songitem.length; i++) {
-    songitem[i].addEventListener('click', () => {
+
+for (let i = 0; i < play.length; i++) {
+    play[i].addEventListener('click', () => {
         // console.log(songitem[i])
         songIndex = i;
         console.log(songIndex)
@@ -105,6 +121,7 @@ for (let i = 0; i < imgplayone.length; i++) {
     imgplayone[i].addEventListener('click', () => {
         imgplaysec[i].classList.add('blox');
         audioElement.play();
+        console.log(songIndex + 'ne')
 
         for (let p = 0; p < imgplayone.length; p++) {
             if (i != p) {
@@ -144,7 +161,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
         audioElement.currentTime = 0;
 
         songIndex = e.target.id;
-        console.log(e.target.id);
+        // console.log(e.target.id);
 
         setTimeout(() => {
 
@@ -168,7 +185,8 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
 
             masterpause.classList.add('show');
             masterpause.classList.remove('hide');
-        }, 400);
+
+        }, 400)
 
     })
 })
@@ -176,10 +194,13 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
 // -------------------- Next button -----------------
 
 document.getElementById('next').addEventListener('click', () => {
+    console.log(songIndex)
     if (songIndex >= 11) {
         songIndex = 0;
     } else {
-        songIndex += 1;
+        // songIndex += 1;
+        songIndex = parseInt(songIndex) + 1;
+        // console.log(songIndex + "under fix")
     }
 
     masterplay.classList.add('show');
@@ -203,6 +224,8 @@ document.getElementById('next').addEventListener('click', () => {
 
         imgplaysec[songIndex].classList.add('blox');
 
+        // console.log(songIndex + "under");
+
         for (let i = 0; i < imgplaysec.length; i++) {
             // console.log('remove ho rhi hai')
             if (i != songIndex) {
@@ -218,11 +241,14 @@ document.getElementById('next').addEventListener('click', () => {
     masterimg[0].src = songitem[songIndex].getElementsByTagName('img')[0].src;
     master[0].innerHTML = songitem[songIndex].getElementsByTagName('h3')[0].innerHTML;
     masterchild[0].innerHTML = songitem[songIndex].getElementsByTagName('p')[0].innerHTML;
+
+    // console.log(songIndex + "next");
 })
 
 // ------------pre button -------------
 
 document.getElementById('Previous').addEventListener('click', () => {
+
     if (songIndex <= 0) {
         songIndex = 11;
     } else {
